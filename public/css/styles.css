@@ -1,0 +1,157 @@
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+    box-sizing: border-box;
+    font-size: 62.5%;
+    width: 100%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #B5147717;
+    /* padding: 0.5rem 0; */
+    border-bottom: 1px solid rgb(118, 117, 117);
+
+}
+
+.screenStyle {
+    display: block;
+}
+
+.mobileStyle {
+    display: none;
+}
+
+.mobileStyle {
+    display: none;
+}
+
+.textStyle1 {
+    margin: 0;
+    color: rgb(135, 31, 31);
+    /* font-size: 5vw */
+    font-size: 3.2rem;
+}
+
+.textStyle2 {
+    color: #36454F;
+    /* font-size: 1vw */
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+.fsw {
+    background-color: azure;
+    margin-bottom: 0;
+    margin: 0;
+}
+
+.bus {
+    background-color: azure;
+    margin: 0;
+}
+
+.business {
+    background-color: azure;
+    margin-bottom: 0;
+}
+
+.quiz {
+    background-color: azure;
+    margin: 0;
+}
+
+.feedback {
+    background-color: azure;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        height: 100vh;
+        background-color: #B5147717;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nameContainer {
+        padding-top: 15vh;
+    }
+
+
+    .arrowContainer {
+        padding-bottom: 5vh;
+       
+    }
+
+    .screenStyle {
+        display: none;
+    }
+
+    .mobileStyle {
+        display: block;
+        margin-bottom: 15%;
+    }
+
+  
+
+    .textStyle1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .textStyle2 {
+        color: #36454F;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .screenHeader {
+        display: none;
+    }
+
+    .pageSection {
+        background-color: antiquewhite;
+        border-top: 1px solid rgb(118, 117, 117);
+        height: 16.66vh;
+    }
+
+    .bus, .quiz{
+        background-color: azure;
+
+    }
+
+    .aClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #B5147717;
+        border-top: 1px solid rgb(118, 117, 117);
+        height: 8.33vh;
+    }
+}
+
+/* 0-480 small mobile phones */
+/* 481 - 768 larger mobiles and smartphones */
+/* 769 - 1279 tablets laptops */
+/* 1280 + larger computer monitors */

@@ -1,0 +1,15 @@
+{
+  "name": "southfields-connection",
+  "version": "1.0.0",
+  "description": "The Connection Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Davis",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

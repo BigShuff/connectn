@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+    <body>
+        <header>
+            <div class="nameContainer">
+                <p class="screenStyle textStyle1">Connect N</p>
+                <p class="mobileStyle textStyle1">Connect<br>N</p>
+            </div>
+            <div class="sloganContainer">
+                <p class="textStyle2">Created in Southfields<br>For<br>Southfields Residents</p>
+            </div>
+
+
+            <div class="arrowContainer">
+                <img class="downArrow" src="/webImages/downArrow.png"
+                    alt="down arrow to direct scroll down as next action">
+            </div>
+        </header>
+        <div class="mobilepage">
+            <%- include("./partials/nav.ejs") %>
+
+                <main>
+                    <section class="pageSection fsw">
+                        <a class="aClass textStyle2" href="/about">FOR SALE & WANTED</a>
+                    </section>
+                    <section class="pageSection bus">
+                        <a class="aClass textStyle2" href="/about">BUS TIMES</a>
+                    </section>
+                    <section class="pageSection business">
+                        <a class="aClass textStyle2" href="/about">BUSINESS</a>
+                    </section>
+                    <section class="pageSection quiz">
+                        <a class="aClass textStyle2" href="/about">QUIZ CORNER</a>
+                    </section>
+                    <section class="pageSection feedback">
+                        <a class="aClass textStyle2" href="/about">FEEDBACK</a>
+                    </section>
+                </main>
+                <footer>
+                    <p>Copyright &#169; January 2025</p>
+                </footer>
+        </div>
+    </body>
+
+</html>

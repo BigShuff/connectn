@@ -1,0 +1,37 @@
+nav ul {
+    background-color: #B5147717;
+    display: flex;
+    height: 8.33vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+    
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    margin-right: 10vw;  
+    /* list-style-type: circle; */
+}
+
+nav ul li a {
+    color: #36454F;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* The following marker rules are for the bullet point styling */
+.li1::marker {
+    color: #602B4C;
+    font-size: 1.5rem;
+
+}
+
+.li2::marker {
+    color: #145685;
+    font-size: 1.5rem;
+}
+
+
+
