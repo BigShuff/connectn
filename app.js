@@ -33,6 +33,10 @@ app.listen(port, hostname, () => {
     res.render('about', { title: 'About' });
   });
 
+  app.get('/saleWantedAds', (req, res) => {
+    res.render('saleWantedAds', {title: 'Sale & Wanted'})
+  })
+
   app.use((req, res) => {
     res.status(404).render('404', { title: '404' });
   });

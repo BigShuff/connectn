@@ -1,17 +1,23 @@
+nav{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
 nav ul {
     background-color: #B5147717;
-    display: flex;
     height: 8.33vh;
-    justify-content: center;
-    align-items: center;
     padding-left: 10vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
     
 }
 
 nav ul li {
     margin: 0;
     padding: 0;
-    margin-right: 10vw;  
+    margin-right: 10vw; 
+
     /* list-style-type: circle; */
 }
 
