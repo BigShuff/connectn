@@ -1,4 +1,6 @@
 const express = require('express');
+const path= require('path');
+const bcrypt = require('bcrypt');
 const hostname = "127.0.0.1";
 const port = 3002;
 
@@ -35,6 +37,10 @@ app.listen(port, hostname, () => {
 
   app.get('/saleWantedAds', (req, res) => {
     res.render('saleWantedAds', {title: 'Sale & Wanted'})
+  })
+
+  app.get('/login', (req, res) => {
+    res.render('login', {title: 'Login'})
   })
 
   app.use((req, res) => {
