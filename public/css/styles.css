@@ -12,7 +12,7 @@ body {
 
 
 header {
-    background-color: #B5147717;
+    background-color: #B5147719;
     /* padding: 0.5rem 0; */
     border-bottom: 1px solid rgb(118, 117, 117);
 
@@ -184,14 +184,12 @@ header {
     }
 
     .logSignBdy{
-        background-color: #b5147719;
         height: 100vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: #b5147719;
     }
-
-  
 
     .formContainer{
         width: 70vw;
@@ -230,7 +228,7 @@ header {
         display: block;
         width: 100%;
         padding: 1rem;
-        background-color: #602B4c;;
+        background-color: #602B4c;
         color: #fff;
         border: none;
         border-radius: 5px;

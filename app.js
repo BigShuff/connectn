@@ -3,6 +3,7 @@ const path= require('path');
 const bcrypt = require('bcrypt');
 const hostname = "127.0.0.1";
 const port = 3002;
+const collection = require('./js/configdb.js');
 
 // express app
 const app = express();
@@ -41,6 +42,10 @@ app.listen(port, hostname, () => {
 
   app.get('/login', (req, res) => {
     res.render('login', {title: 'Login'})
+  })
+
+  app.get('/signup', (req, res) => {
+    res.render('signup', {title: 'Sign Up'})
   })
 
   app.use((req, res) => {
