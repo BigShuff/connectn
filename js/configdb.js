@@ -33,5 +33,5 @@ const registrationSchema = new Schema(
   },
 );
 
-const regInfo = mongoose.model('registration', registrationSchema)
+const regInfo = mongoose.model('registrationInfo', registrationSchema)
 module.exports = regInfo;

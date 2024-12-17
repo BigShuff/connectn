@@ -4,6 +4,10 @@ const bcrypt = require('bcrypt');
 const hostname = "127.0.0.1";
 const port = 3002;
 const regInfo = require('./js/configdb');
+const collection = require('./js/configdb.js');
+const regInfo = require('./js/configdb.js');
+
+
 
 // express app
 const app = express();
