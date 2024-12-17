@@ -58,9 +58,13 @@ app.listen(port, hostname, () => {
       password: req.body.password,
       date: registrationDate
     })
-    const existingUser = await regInfo.findOne({username: aReg.username})
+    let existingUser = await regInfo.findOne({username: aReg.username})
     if (existingUser) {
       res.send('User already exists. Choose a different user name');
+    } 
+    existingUser = await regInfo.findOne({email: aReg.email})
+    if (existingUser)  {
+      res.send('Please check your email address');
     } else {
       //hash the password
       const saltRounds = 10;
@@ -74,15 +78,9 @@ app.listen(port, hostname, () => {
       console.log(err);
     })
     }
-    
+  });
 
-    // const userData = await regInfo.insertMany(aReg)
-    // console.log(userData)
-    // console.log(req.body.username);
-    // console.log(req.body.email);
-    // console.log(req.body.password);
-    // console.log(registrationDate);
-  })
+  
 
   app.use((req, res) => {
     res.status(404).render('404', { title: '404' });
