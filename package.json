@@ -1,7 +1,7 @@
 {
-  "name": "southfields-connection",
+  "name": "connectn",
   "version": "1.0.0",
-  "description": "The Connection Website",
+  "description": "The Connectn Website",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
