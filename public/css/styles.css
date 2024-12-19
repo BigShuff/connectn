@@ -244,7 +244,10 @@ header {
         margin-top: 1rem;
     }
 
-
+    .warning{
+        font-size: 1.2;
+        color: rgb(113, 1, 1);
+    }
 
 
 }
