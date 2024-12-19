@@ -13,7 +13,6 @@ body {
 
 header {
     background-color: #B5147719;
-    /* padding: 0.5rem 0; */
     border-bottom: 1px solid rgb(118, 117, 117);
 
 }
@@ -30,21 +29,8 @@ header {
     display: none;
 }
 
-.textStyle1 {
-    margin: 0;
-    color: rgb(135, 31, 31);
-    font-size: 3.2rem;
-}
-
-.textStyle2 {
-    color: #36454F;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-
-
 .fsw {
+    
     background-color: azure;
     margin-bottom: 0;
     margin: 0;
@@ -90,6 +76,7 @@ header {
     }
 
     .sloganContainer {
+        text-align: center;
         grid-row: 2 / 3;
         grid-column: 1 / 2;
     }
@@ -107,6 +94,9 @@ header {
     }
 
     .mobileStyle {
+        text-align: center;
+        margin: auto;
+        color: rgb(135, 31, 31);
         display: block;
     }
 
@@ -124,15 +114,28 @@ header {
     }
 
     .textStyle1 {
-        text-align: center;
-        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3.2rem;
+        font-weight: 600;
+        
     }
 
     .textStyle2 {
-        color: #36454F;
-        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.2rem;
         font-weight: 600;
-        text-align: center;
+    }
+
+    .textStyle3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .textStyle4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 200;
     }
 
     .screenHeader {
@@ -146,6 +149,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
     }
 
     .bus,
@@ -160,10 +164,11 @@ header {
         width: 100%;
         height: 100%;
         text-decoration: none;
+        /* color: #36454F; */
     }
 
     .aClassSmallTxt {
-        color: #36454F;
+        /* color: #36454F; */
         font-size: 1rem;
         font-weight: 400;
         text-align: center;
@@ -183,11 +188,15 @@ header {
         align-items: center;
     }
 
+    footer p{
+        color:rgb(118, 117, 117)
+    }
+
     .logSignBdy{
         height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         background-color: #b5147719;
     }
 
@@ -199,10 +208,9 @@ header {
         border-radius: 5px;
     }
 
-    .formContainer h2 {
+    .formContainer p {
         text-align: center;
         margin-bottom: 2rem;
-        font-size: 2rem;
     }
 
     .formGroup{
@@ -211,15 +219,12 @@ header {
 
     .formGroup label{
         display: block;
-        font-size: 1.2rem;
-        font-weight: bold;
         margin-bottom: 0.4rem;
     }
 
     .formGroup input{
         width: 100%;
         padding: 8px;
-        font-size: 1.2rem;
         border: 1px solid #ccc;
         border-radius: 3px;
     }
@@ -235,7 +240,7 @@ header {
         cursor: pointer;
     }
 
-    .formGroup .submitBtn:hover{
+    .formContainer .submitBtn:hover{
         background-color: #602b4cc6;
     }
 
@@ -245,7 +250,6 @@ header {
     }
 
     .warning{
-        font-size: 1.2;
         color: rgb(113, 1, 1);
     }
 
