@@ -3,7 +3,6 @@ nav{
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     border-bottom: 1px solid rgb(118, 117, 117);
-    /* border: 3px solid blue; */
 }
 
 nav ul {

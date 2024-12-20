@@ -33,7 +33,7 @@
     .mobileSizedStyle {
         text-align: center;
         margin: auto;
-        color: rgb(135, 31, 31); */
+        color: rgb(135, 31, 31);
         display: block;
     }
     
@@ -57,7 +57,6 @@
         width: 100%;
         grid-template-rows: 1fr 10fr 1fr;
         grid-template-columns: 1fr;
-        /* border: 3px solid red; */
     }
 
     main {
@@ -69,7 +68,6 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 3.2rem;
         font-weight: 600;
-        
     }
 
     .textStyle2 {
@@ -112,7 +110,6 @@
         height: 100%;
         text-decoration: none;
         color:black;
-        /* color: #36454F; */
     }
 
     /* login and register pages */
@@ -121,7 +118,6 @@
         display: grid;
         grid-template-rows: 1fr 10fr 1fr;
         grid-template-columns: 1fr;
-        /* background-color: #b5147717; */
     }
 
     .midAreaFormat{
@@ -130,7 +126,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* border: 3px solid red;  */
     }
     .formContainer{
         display: flex;
@@ -180,6 +175,7 @@
     }
 
     .signupTxt{
+        text-align: center;
         color: #145685;
         font-weight: 500;
     }
@@ -196,7 +192,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* border: 3px solid blue; */
     }
 
     footer p{
