@@ -1,62 +1,15 @@
-body {
-    font-size: 62.5%;
-    width: 100%;
-}
-
-* {
-   
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-header {
-    background-color: #B5147719;
-    border-bottom: 1px solid rgb(118, 117, 117);
-
-}
-
-.screenStyle {
-    display: block;
-}
-
-.mobileStyle {
-    display: none;
-}
-
-.mobileStyle {
-    display: none;
-}
-
-.fsw {
-    
-    background-color: azure;
-    margin-bottom: 0;
-    margin: 0;
-}
-
-.bus {
-    background-color: azure;
-    margin: 0;
-}
-
-.business {
-    background-color: azure;
-    margin-bottom: 0;
-}
-
-.quiz {
-    background-color: azure;
-    margin: 0;
-}
-
-.feedback {
-    background-color: azure;
-    margin: 0;
-}
-
 @media (max-width: 768px) {
+    body {
+        font-size: 62.5%;
+        width: 100%;
+    }
+
+    * {
+   
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
     header {
         height: 100vh;
@@ -65,7 +18,6 @@ header {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-
     }
 
     .nameContainer {
@@ -75,6 +27,17 @@ header {
         align-items: center;
     }
 
+    .aboveMobileSizedStyle {
+        display: none;
+    }
+
+    .mobileSizedStyle {
+        text-align: center;
+        margin: auto;
+        color: rgb(135, 31, 31);
+        display: block;
+    }
+    
     .sloganContainer {
         text-align: center;
         grid-row: 2 / 3;
@@ -89,17 +52,6 @@ header {
         align-items: center;
     }
 
-    .screenStyle {
-        display: none;
-    }
-
-    .mobileStyle {
-        text-align: center;
-        margin: auto;
-        color: rgb(135, 31, 31);
-        display: block;
-    }
-
     .mobilePage {
         display: grid;
         height: 100vh;
@@ -111,6 +63,7 @@ header {
     main {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
+        border: 3px solid red;
     }
 
     .textStyle1 {
@@ -138,11 +91,7 @@ header {
         font-weight: 200;
     }
 
-    .screenHeader {
-        display: none;
-    }
-
-    .pageSection {
+   .pageSection {
         /* background-color: antiquewhite; */
         border-top: 1px solid rgb(118, 117, 117);
         height: 16.66vh;
@@ -152,9 +101,8 @@ header {
         text-align: center;
     }
 
-    .bus,
-    .quiz {
-        background-color: azure;
+    .colorChange1 {
+        background-color: #b5147719;
     }
 
     .aClass {
@@ -165,17 +113,6 @@ header {
         height: 100%;
         text-decoration: none;
         /* color: #36454F; */
-    }
-
-    .aClassSmallTxt {
-        /* color: #36454F; */
-        font-size: 1rem;
-        font-weight: 400;
-        text-align: center;
-    }
-
-    .aClass:hover {
-        background-color: rgb(211, 193, 170);
     }
 
     footer {
@@ -192,15 +129,27 @@ header {
         color:rgb(118, 117, 117)
     }
 
+    /* login and register pages */
     .logSignBdy{
         height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-columns: 1fr;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         background-color: #b5147719;
     }
 
+    .midAreaFormat{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        border: 3px solid red; 
+    }
     .formContainer{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
         width: 70vw;
         margin: 0 auto;
         padding: 1rem;
@@ -211,6 +160,10 @@ header {
     .formContainer p {
         text-align: center;
         margin-bottom: 2rem;
+    }
+
+    form{
+        border: 3px dashed green;
     }
 
     .formGroup{
@@ -229,23 +182,17 @@ header {
         border-radius: 3px;
     }
 
-    .formContainer .submitBtn{
+    .submitBtn{
         display: block;
         width: 100%;
         padding: 1rem;
-        background-color: #602B4c;
+        background-color: #b51477e9;
         color: #fff;
         border: none;
         border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .formContainer .submitBtn:hover{
-        background-color: #602b4cc6;
     }
 
     .formContainer p{
-        font-size: 1.2rem;
         margin-top: 1rem;
     }
 

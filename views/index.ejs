@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include("./partials/head.ejs") %>
-
     <body>
         <header>
             <div class="nameContainer">
-                <p class="screenStyle textStyle1">Connect N</p>
-                <p class="mobileStyle textStyle1">Connect<br>N</p>
+                <p class="aboveMobileSizedStyle textStyle1">Connect N</p>
+                <p class="mobileSizedStyle textStyle1">Connect<br>N</p>
             </div>
             <div class="sloganContainer">
                 <p class="textStyle3">Created in Southfields<br>For<br>Southfields Residents</p>
             </div>
             <div class="arrowContainer">
-                <img class="downArrow" src="/webImages/downArrow.png"
+                <img src="/webImages/downArrow.png"
                     alt="down arrow to direct scroll down as next action">
             </div>
         </header>
         <div class="mobilePage">
             <%- include("./partials/nav.ejs") %>
-
                 <main>
-                    <section class="pageSection fsw">
+                    <section class="pageSection">
                         <a class="aClass textStyle3" href="/saleWantedAds">FOR SALE & WANTED<br><br>View or place ads</a>
                         
                     </section>
-                    <section class="pageSection bus">
+                    <section class="pageSection colorChange1">
                         <a class="aClass textStyle3" href="/about">BUS TIMES<br><br>Up to the minute bus times</a>
                     </section>
-                    <section class="pageSection business">
+                    <section class="pageSection">
                         <a class="aClass textStyle3" href="/about">BUSINESS<br><br>View or place ads</a>
                     </section>
-                    <section class="pageSection quiz">
-                        <a class="aClass textStyle3" href="/about">QUIZ CORNER<br><br>When you have a little time to yourself</a>
+                    <section class="pageSection ">
+                        <a class="aClass textStyle3 colorChange1" href="/about">QUIZ CORNER<br><br>When you have a little time to yourself</a>
                     </section>
-                    <section class="pageSection feedback">
+                    <section class="pageSection">
                         <a class="aClass textStyle3" href="/about">FEEDBACK<br><br>Give us your feedback and pass on your suggestions</a>
                     </section>
                 </main>
@@ -42,5 +40,4 @@
                 </footer>
         </div>
     </body>
-
 </html>

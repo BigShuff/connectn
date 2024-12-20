@@ -2,6 +2,9 @@
 <html lang="en">
     <%- include("./partials/head.ejs") %>
 <body class="logSignBdy">
+    <%- include("./partials/nav.ejs") %>
+    <!-- added div -->
+     <div class="midAreaFormat">
     <div class="formContainer">
         <p class="textStyle2">Login</p>
         <form action="/login" method="post">
@@ -19,6 +22,8 @@
         <% if (warning) { %>
             <p class="textStyle3 warning"><%= warning %></p>
         <% } %>
+    </div>
+    <!-- added div -->
     </div>
     <footer>
         <p class="textStyle4">Copyright &#169; January 2025  - Payments - Terms of use - Cookies</p>
