@@ -40,7 +40,7 @@ app.get('/about', (req, res) => {
 })
 
 app.get('/saleWantedAds', (req, res) => {
-  res.render('saleWantedAds', { title: 'Sale & Wanted' });
+  res.render('saleWantedAds', { title: 'For Sale & Wanted' });
 })
 
 app.get('/login', (req, res) => {
