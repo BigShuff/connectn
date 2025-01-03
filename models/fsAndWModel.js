@@ -27,7 +27,7 @@ const fsAndWSchema = new Schema(
       required: false,
     },
 
-    area: {
+    localArea: {
       type: String,
       required: true,
     },
@@ -47,7 +47,7 @@ const fsAndWSchema = new Schema(
       required: true,
     },
     
-    addCost: {
+    adCost: {
       type: String,
       required: true,
     },
@@ -62,7 +62,7 @@ const fsAndWSchema = new Schema(
       required: true,
     },
 
-    OkTAndC: {
+    okTAndC: {
       type: String,
       required: true,
     },

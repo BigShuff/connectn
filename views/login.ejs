@@ -2,9 +2,7 @@
 <html lang="en">
     <%- include("./partials/head.ejs") %>
 <body class="logSignBdy">
-    <nav>
         <%- include("./partials/nav.ejs") %>
-        </nav>
     <!-- added div -->
      <div class="midAreaFormat">
     <div class="formContainer">
@@ -21,9 +19,7 @@
             <button class="textStyle3 submitBtn" type="submit">Login</button>
         </form>
         <p class="dontHaveAcc textStyle3">Don't have an account?</p><a class="textStyle3 signupTxt" href="signup">Signup</a>
-        <% if (warning) { %>
-            <p class="textStyle3 warning"><%= warning %></p>
-        <% } %>
+       
     </div>
     <!-- added div -->
     </div>
@@ -32,3 +28,4 @@
     </footer>
 </body>
 </html>
+

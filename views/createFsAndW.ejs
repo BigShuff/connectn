@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+  <body class="createFsAndWBdy">
+      <%- include("./partials/nav.ejs") %>
+    <div class="midAreaFormatcAndFs">
+    <div class="formContainer">
+      <p class="textStyle2">Place An Ad</p>
+     <form action="/fsAndW" method="post">
+      <div class="formGroup radioBtns">
+      <div>
+        <input id="forSale" class="textStyle3" type="radio" name="fsOrW" value="for sale" >
+        <label class="rbTxt textStyle3" for="forSale" class="textStyle3">For Sale</label>
+      </div>
+      
+      <div>
+        <input id="wanted" class="textStyle3" type="radio" name="fsOrW" value="wanted">
+        <label class="rbTxt textStyle3" for="wanted" class="textStyle3">Wanted</label>
+      </div>
+    </div>
+      <div class="formGroup">
+        <label class="textStyle3" for="heading">Heading</label>
+        <input class="textStyle3" type="text" name="heading">
+        <label class="textStyle3" for="subHeading">Sub Heading</label>
+        <input class="textStyle3" type="text" name="subHeading">
+        <label class="textStyle3" for="body">Body</label>
+        <textarea class="textStyle3" type="textarea" name="body" rows="4" cols="30"></textarea>
+        <label class="textStyle3" for="" class="imageUpload">Upload Photo</label>
+        <input class="textStyle3" type="image" name="imageUpload" src="img_submit.gif" alt="Submit" width="48" height="48">
+      </div>
+      <div class="formGroup">
+        <label class="textStyle3" for="localArea">Local Area</label>
+        <select class="textStyle3" name="localArea">
+          <option value="Southfields">Southfields</option>
+        </select>
+        <label class="textStyle3" for="email">Email Address</label>
+        <input class="textStyle3" type="email">
+        <label class="textStyle3" for="price">Price £</label>
+        <input class="textStyle3" type="number" name="price" value="" aria-placeholder="£">
+        <label class="textStyle3" for="offerStatus">Offer Status</label>
+        <select class="textStyle3" name="offerStatus">
+          <option value="no offers">No offers</option>
+          <option value="ono">No offers</option>
+        </select>
+        <label class="textStyle3" for="transportation">Transportation</label>
+        <select class="textStyle3" name="transportation">
+          <option value="We can deliver ask for details">We can deliver ask for details</option>
+          <option value="Collection only">Collection only</option>
+          <option value="We can collect from seller">We can collect from seller</option>
+        </select>
+      </div>
+      <div class="formGroup">
+        <label class="textStyle3" for="durationDays">Ad Duration</label>
+        <select class="textStyle3" name="durationDays">
+          <option value="7">7 Days</option>
+          <option value="14">14 Days</option>
+          <option value="28">28 Days</option>
+        </select>
+      </div>
+        <div class="okTcGroup formGroup">
+        <label class="textStyle3" for="okTAndC"><input type="checkbox" name="okTAndC">I have read and understood the Terms and Conditions of advertising</label>
+        <input class="date" type="text" hidden>
+        </div>
+     <!-- ******************** ADD INPUT FOR ADCOST ********************-->
+      <div class="formGroup">
+      <button class="textStyle3 submitBtn" type="submit">Send My Form</button>
+      </div>
+    </form>
+  </div> <!--formContainer -->
+   </div><!--midArea -->
+    </div>
+    <footer>
+      <p class="textStyle4">Copyright &#169; January 2025  - Payments - Terms of use - Cookies</p>
+  </footer>
+  </body>
+
+</html>
